@@ -7,7 +7,6 @@ to each other, like Facebook Messages app or Google Chat.
 2. Create an environment `py -m venv .`
 4. Install dependencies `pip install -r requirements.txt`
 5. Run the app `flask run`
-8. Run tests `pytest tests/`
 
 The application will start on `http://127.0.0.1:5000/`
 
@@ -21,7 +20,9 @@ The application will start on `http://127.0.0.1:5000/`
 **Message model:**
 ```json
 {
-    "sender": "string"      # limit is 25 characters  
-    "recipient" : "string"  # limit is 25 characters
-    "text": "string"        # limit is 140 characters
+    "sender": "string", 
+    "recipient" : "string",
+    "text": "string"
 }
+```
+The sender id and recipient id have limit in 25 characters, the text has limit in 140 characters.
